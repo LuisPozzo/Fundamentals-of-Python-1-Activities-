@@ -9,6 +9,4 @@ str = input ('Ingresa una palabra: ')
 
 #llamado a la funcion
 conteo_mayus_minus (str)
-
-#resultado
 print (f"Resultado opcion 1: Mayusculas {upper} -- Minusculas {lower}" )
