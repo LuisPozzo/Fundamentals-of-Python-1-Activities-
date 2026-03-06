@@ -29,7 +29,7 @@ import msvcrt
 
 print ('Bienvenido al parqueadero, estas son las consultas disponibles:')
 
-#Creacion de lista coo infraestructura del parqueadero.
+#Creacion de lista con infraestructura del parqueadero.
 parking = ['Disponible']*10
 
 while True:
