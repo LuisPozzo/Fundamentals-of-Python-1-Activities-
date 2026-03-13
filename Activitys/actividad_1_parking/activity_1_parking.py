@@ -33,7 +33,6 @@ def regresar_menu (n):
             sleep(n) #detención de la ejecución del programa durante los segundos indicados.
     os.system("cls")    #Limpiar la consola.
 
-
 print ('Bienvenido al parqueadero, estas son las consultas disponibles:')
 
 parking = ['Disponible']*10 #Creacion de lista con infraestructura del parqueadero.
@@ -90,7 +89,7 @@ while True:
             
             #Opcion para no regresar al menu de inmediato, siendo mas interactico.
             print("\nPresiona cualquier tecla para continuar...")
-            msvcrt.getch()
+            msvcrt.getch() #funcion para continuar la ejecución del programa, despues de que el usuario pulse una tecla
             regresar_menu(0.06)
             break
 
@@ -100,14 +99,14 @@ while True:
         if placa not in parking: #Validacion de que existencia de placa ingresada
             print("La placa ingresada no existe.")
             print("\nPresiona cualquier tecla para continuar...")
-            msvcrt.getch()
+            msvcrt.getch() #funcion para continuar la ejecución del programa, despues de que el usuario pulse una tecla
             regresar_menu(0.06)
 
         else:#Retirar un vehiculo
             indice = parking.index (placa)
             parking [indice] = 'Disponible'
             print (f'Vehiculo retirado de la posición { indice + 1}')
-            msvcrt.getch()
+            msvcrt.getch() #funcion para continuar la ejecución del programa, despues de que el usuario pulse una tecla
             regresar_menu(0.06)
 
     elif opcion == 4:
